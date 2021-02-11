@@ -4,14 +4,6 @@
       xmlns:f="http://java.sun.com/jsf/core"
       xmlns:h="http://java.sun.com/jsf/html"> 
 
-<!-- <h:head>
-	<title>
-		JSF Response Page
-	</title>
-</h:head> 
-<body> 
-	Hello, My name is: #{user.firstName} #{user.lastName}
-</body> -->
 
 <h:body>
 	<!-- Set the Layout and Title for this page -->
@@ -23,7 +15,11 @@
 		Hello, My name is: #{user.firstName} #{user.lastName}. Your Orders are:<br/>
 		<br/>
 		<!-- Table of Product -->
-		<h:dataTable value="#{orders.orders}" var="o" styleClass="order-table" headerClass="order-table-header" footerClass="footer" rowClasses="order-table-even-row, order-table-odd-row"> 
+		<h:dataTable value="#{orders.orders}" var="o" 
+		styleClass="order-table" 
+		headerClass="order-table-header" 
+		footerClass="footer" 
+		rowClasses="order-table-even-row, order-table-odd-row"> 
 		<h:column>
 			<f:facet name="header"> Order Number</f:facet>
 			#{o.orderNumber}

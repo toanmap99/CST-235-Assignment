@@ -15,6 +15,8 @@ public class Orders
 	
 	public Orders()
 	{
+		// Initialized with list of products
+		
 		orders.add(new Order("000", "Product 1", (float)1.00,1));
 		orders.add(new Order("001", "Product 2", (float)2.00,2));
 		orders.add(new Order("002", "Product 3", (float)3.00,3));
